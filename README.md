@@ -1,6 +1,6 @@
 # Proyek Laravel
 
-Ini adalah proyek berbasis Laravel. Di Tunjukan Untuk Tes Di Kominfo
+Ini adalah Tes Seleksi berbasis Laravel. Di Tunjukan Untuk Tes DisKominfo
 
 ## Persyaratan
 
