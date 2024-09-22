@@ -1,6 +1,6 @@
 # Proyek Laravel
 
-Ini adalah proyek berbasis Laravel.
+Ini adalah proyek berbasis Laravel. Di Tunjukan Untuk Tes Di Kominfo
 
 ## Persyaratan
 
@@ -20,8 +20,8 @@ Berikut langkah-langkah untuk menginstal dan menjalankan proyek ini di komputer 
 Clone repository proyek ini ke komputer lokal Anda:
 
 ```bash
-git clone https://github.com/username/nama-proyek-laravel.git
-cd nama-proyek-laravel
+git clone https://github.com/AinunMahendra/Tes-Dikominfo.git
+cd Tes-Dikominfo
 ```
 
 ### 2. Install Dependencies
@@ -65,13 +65,17 @@ php artisan key:generate
 Untuk membuat tabel di database sesuai dengan skema yang ada di proyek ini, jalankan perintah:
 
 ```bash
-php artisan migrate
+php artisan migrate -seed
+dan 
+ 
 ```
 
 Jika Anda juga perlu mengisi beberapa data awal (seeder), jalankan perintah berikut:
 
 ```bash
 php artisan db:seed
+dan ini
+php artisan db:seed --class=NewOrdersTableSeeder
 ```
 
 ### 6. Menjalankan Server Development
@@ -84,19 +88,16 @@ php artisan serve
 
 Server Laravel akan berjalan di `http://localhost:8000`. Anda bisa membuka browser dan mengakses URL tersebut.
 
-### 7. Mengompilasi Aset Frontend (Jika Diperlukan)
+### 7. Jika terkendala masalah Route (Jika Diperlukan)
 
-Jika proyek ini menggunakan file frontend (CSS, JavaScript, dll.), jalankan perintah berikut untuk mengompilasi aset-aset tersebut:
-
-```bash
-npm run dev
-```
-
-Untuk membuat aset-aset versi produksi:
+Jika proyek ini terkendala route 404 atau tidak bisa akses endpoint API untuk mengompilasi resouce tersebut disarankan melakukan ini:
 
 ```bash
-npm run prod
+php artisan optimize
+php artisan config:clear
+php artisan route:clear
 ```
+
 
 ## Fitur
 
@@ -108,10 +109,8 @@ npm run prod
 
 1. Setelah menjalankan `php artisan serve`, buka browser dan akses aplikasi melalui `http://localhost:8000`.
 2. Gunakan Postman atau antarmuka lain untuk mengakses API berikut:
-   - **GET /api/orders**: Untuk melihat daftar semua order.
-   - **POST /api/orders**: Untuk membuat order baru dengan produk terkait.
-   - **GET /api/orders/{id}**: Untuk melihat detail spesifik dari suatu order.
-   - **DELETE /api/orders/{id}**: Untuk menghapus order (opsional, tambahkan sesuai kebutuhan).
+   - **GET /api/produk**: 
+   - **GET /api/orders**: 
 
 ## Penanganan Error
 
