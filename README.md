@@ -19,6 +19,4 @@ Berikut langkah-langkah untuk menginstal dan menjalankan proyek ini di komputer 
 
 Clone repository proyek ini ke komputer lokal Anda:
 
-```bash
-git clone https://github.com/username/nama-proyek-laravel.git
-cd nama-proyek-laravel
+git clone https://github.com/AinunMahendra/Tes-Dikominfo.git
